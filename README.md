@@ -6,8 +6,7 @@ This project serves as a practical validation of my research into LLM applicatio
 A secure, performance-optimized portfolio website built using LLMs for development assistance. This project demonstrates how AI tools can be leveraged to implement enterprise-grade security and performance optimizations without prior web development experience.
 
 ## Security Implementation
-Current Lynis security scan score:
-Hardening index : 80
+Current Lynis security scan hardening index : 80
 
 ### Infrastructure Protection
 - UFW, iptables, and nftables firewall implementation
