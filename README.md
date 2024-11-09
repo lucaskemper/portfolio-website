@@ -51,13 +51,6 @@ The journey continues with planned enhancements including:
 - Expanded content and functionality
 - Integration with cutting-edge financial analysis tools
 
-## Getting Started
-The repository includes comprehensive documentation for replicating this secure environment:
-1. Clone the repository
-2. Follow the detailed Nginx security configuration guide
-3. Implement the provided SSL/TLS settings
-4. Configure security headers and rate limiting
-5. Deploy through Cloudflare's global network
 
 ## Author
 Lucas Kemper
