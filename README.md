@@ -8,7 +8,7 @@ A secure, performance-optimized portfolio website built using LLMs for developme
 ## Security Implementation
 Lynis security scan details:
 
-  Hardening index : 80 [################    ]
+  Hardening index : 80
 ### Infrastructure Protection
 - UFW, iptables, and nftables firewall implementation
 - Fail2ban and CrowdSec for intrusion prevention
