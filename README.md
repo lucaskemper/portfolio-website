@@ -8,8 +8,7 @@ A secure, performance-optimized portfolio website built using LLMs for developme
 - Frontend: Static HTML5/CSS3
 - Server: Nginx on Ubuntu 22.04 LTS
 - CDN: Cloudflare
-- Analytics: Google Analytics 4 (G-ES9YY7F3M4)
-
+- Analytics: Google Analytics 4 
 ### Security Implementation
 #### Access Control & Rate Limiting
 - IP-based rate limiting: 10 req/s
