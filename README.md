@@ -81,13 +81,6 @@ Practical application of LLM research, focusing on:
 - Content expansion
 - Financial analysis integration
 
-## Setup
-1. Clone repository
-2. Configure Nginx security settings
-3. Set up SSL certificates
-4. Configure security headers
-5. Deploy via Cloudflare
-
 ## Author
 Lucas Kemper
 - [Website](https://lucaskemper.com)
