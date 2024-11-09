@@ -1,56 +1,93 @@
 # LLM-Powered Portfolio Website
-
-## Overview
-At the intersection of artificial intelligence and web development lies this innovative portfolio website, representing a groundbreaking approach to modern web development. What makes this project unique is not just its technical implementation, but the journey it represents: leveraging Large Language Models to transform from zero web development knowledge to creating a highly secure, performance-optimized platform that serves as both a personal portfolio and a testament to AI-human collaboration.
-
-## Technical Symphony
-### Foundation
-The website is built upon a carefully orchestrated stack of modern technologies. A clean, responsive frontend utilizing HTML5 and CSS3 communicates seamlessly with a robust Nginx server running on Ubuntu 22.04 LTS. Static assets are delivered through Cloudflare's global CDN network, ensuring lightning-fast content delivery worldwide.
-
-### Security Architecture
-The security implementation represents a masterclass in modern web protection, featuring a multi-layered approach that would be at home in any enterprise environment:
-
-#### Access Control & Traffic Management
-A sophisticated traffic management system implements intelligent rate limiting, allowing 10 requests per second per IP address while maintaining stricter 5 req/s limits for sensitive zones. This is complemented by ModSecurity WAF, providing real-time threat detection and prevention.
-
-#### Cryptographic Protection
-The SSL/TLS implementation showcases modern cryptographic best practices, utilizing only TLSv1.2 and TLSv1.3 protocols with carefully selected cipher suites that prioritize Perfect Forward Secrecy. OCSP Stapling with verification ensures certificate validity without compromising performance.
-
-#### Advanced Security Headers
-A comprehensive suite of security headers forms an impenetrable shield against common web vulnerabilities:
-- HSTS with a two-year duration enforces secure connections
-- A meticulously crafted Content Security Policy restricts resource origins
-- XSS protection operates in block mode, preventing cross-site scripting attacks
-- Carefully tuned frame protection and content sniffing controls add additional security layers
-
-#### Resource Optimization & Protection
-Every aspect of resource handling has been fine-tuned for both security and performance:
-- Precisely calibrated buffer limitations prevent resource exhaustion
-- Strategic timeout configurations thwart slow-loris attacks
-- CORS and Permissions Policies provide granular control over browser features
-- HTTP/2 implementation balances security with performance
-
-## The AI-Human Collaboration Journey
-This project represents more than just a website; it's a testament to the transformative power of AI in software development. Using Cursor.sh as the AI-augmented development environment, every aspect of the site was crafted through thoughtful dialogue with Large Language Models, from initial concept to final implementation.
-
-## Performance Achievements
-The relentless pursuit of performance optimization has yielded impressive results:
-- Sub-100ms load times that rival industry leaders
-- Intelligent caching strategies that balance freshness with speed
-- Optimized asset delivery pipelines that minimize resource consumption
-- Clean, logical URL structures that enhance both UX and SEO
-
-## Research Integration
 This project serves as a practical validation of my research into LLM applications, demonstrating how AI can bridge the gap between theoretical knowledge and practical implementation. It showcases the potential of AI-assisted development to democratize complex technical implementations while maintaining enterprise-grade standards.
+## Overview
+A secure, performance-optimized portfolio website built using LLMs for development assistance. This project demonstrates how AI tools can be leveraged to implement enterprise-grade security and performance optimizations without prior web development experience.
 
-## Future Horizons
-The journey continues with planned enhancements including:
-- Advanced analytics integration for deeper user insights
-- Additional security layers to counter emerging threats
-- Continuous performance optimization
-- Expanded content and functionality
-- Integration with cutting-edge financial analysis tools
+## Technical Implementation
+### Infrastructure
+- Frontend: Static HTML5/CSS3
+- Server: Nginx on Ubuntu 22.04 LTS
+- CDN: Cloudflare
+- Analytics: Google Analytics 4 (G-ES9YY7F3M4)
 
+### Security Implementation
+#### Access Control & Rate Limiting
+- IP-based rate limiting: 10 req/s
+- Zone-specific limits: 5 req/s
+- Concurrent connections: 10 per IP
+- ModSecurity WAF enabled
+
+#### SSL/TLS Configuration
+- Protocols: TLSv1.2, TLSv1.3
+- Cipher suite: ECDHE/DHE with Perfect Forward Secrecy
+- OCSP Stapling: Enabled with verification
+- Session management:
+  - 1d timeout
+  - 50MB shared cache
+  - Session tickets disabled
+
+#### Security Headers
+- HSTS: 2-year duration
+- CSP: Strict configuration limiting:
+  - Default-src: self, Cloudflare CDN
+  - Script-src: Trusted domains only
+  - Style-src: self with inline
+  - Restricted image and font sources
+- X-Frame-Options: SAMEORIGIN
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: strict-origin-when-cross-origin
+
+#### Resource Protection
+- Buffer limits:
+  - Client body: 10K
+  - Header: 1k
+  - Max body: 8MB
+  - Large headers: 4x8k
+- Timeouts:
+  - Client body: 12s
+  - Client header: 12s
+  - Keep-alive: 15s
+  - Send: 10s
+
+#### Additional Security
+- CORS: Strict cross-origin policies
+- Permissions Policy: Restricted feature access
+- HTTP/2: Enabled
+- CRIME attack prevention: Gzip disabled for IE6
+
+### Performance Metrics
+- Load time: <100ms
+- Optimized asset delivery
+- Efficient caching implementation
+- Clean URL structure
+
+## Development Process
+Built using Cursor.sh IDE with LLM assistance for:
+- Security configuration implementation
+- Performance optimization
+- Code generation and debugging
+- Best practices implementation
+
+## Research Connection
+Practical application of LLM research, focusing on:
+- AI-assisted technical implementation
+- Security measure deployment
+- Performance optimization
+- Development workflow automation
+
+## Future Development
+- Analytics enhancement
+- Security hardening
+- Performance optimization
+- Content expansion
+- Financial analysis integration
+
+## Setup
+1. Clone repository
+2. Configure Nginx security settings
+3. Set up SSL certificates
+4. Configure security headers
+5. Deploy via Cloudflare
 
 ## Author
 Lucas Kemper
@@ -59,7 +96,3 @@ Lucas Kemper
 
 ## License
 MIT License
-
----
-
-*This project stands as a testament to the power of AI-human collaboration in creating sophisticated, secure, and high-performance web applications. It demonstrates that with the right tools and approach, complex technical implementations are within reach of anyone willing to embrace AI-assisted development.*
