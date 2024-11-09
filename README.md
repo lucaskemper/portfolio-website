@@ -14,7 +14,7 @@ This project represents a practical implementation of my research into Large Lan
 ### Server & Infrastructure
 - Nginx on Ubuntu 22.04 LTS
 - Cloudflare CDN for static assets
-- Enhanced Google Analytics 4 (G-ES9YY7F3M4)
+
 
 ### Security Features
 - HTTPS with TLS 1.3
