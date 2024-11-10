@@ -84,9 +84,6 @@ Current Lynis security scan hardening index: 80
 - SSL Rating: A+
 - Security Headers: A+
 - Load Time: <100ms
-- HTTP/2: Enabled
-- First Paint: <1s
-- Core Web Vitals: All Passed
 
 ## Continuous Integration
 - Automated security updates
@@ -100,12 +97,10 @@ Current Lynis security scan hardening index: 80
 - Frontend: Static HTML5/CSS3
 - Server: Nginx on Ubuntu 22.04 LTS
 - CDN: Cloudflare
-- Analytics: Google Analytics 4
 - Animations: AOS, Particles.js
-- Icons: Font Awesome 6
 
 ## Development Process
-Built using Cursor.sh IDE with LLM assistance for:
+Built using LLM assistance for:
 - Security configuration implementation
 - Performance optimization
 - Code generation and debugging
