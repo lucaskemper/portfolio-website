@@ -123,6 +123,10 @@ graph TD
     style Client fill:#e1f5fe,stroke:#333,stroke-width:2px
     style CDN fill:#fff3e0,stroke:#333,stroke-width:2px
 
+    style Server fill:#f5f5f5,stroke:#333,stroke-width:2px
+    style Client fill:#e1f5fe,stroke:#333,stroke-width:2px
+    style CDN fill:#fff3e0,stroke:#333,stroke-width:2px
+
 ## Development Process
 Built using LLM assistance for:
 - Security configuration implementation
