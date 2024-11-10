@@ -38,7 +38,7 @@ A highly secure, performance-optimized portfolio website built using LLMs for de
 - Keyboard navigation support
 
 ## Security Implementation
-Current Lynis security scan hardening index: 80
+Current Lynis security scan hardening index: 85
 
 ### Infrastructure Protection
 - UFW, iptables, and nftables firewall implementation
