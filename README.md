@@ -1,12 +1,44 @@
 ### IN REDACTION
 # LLM-Powered Portfolio Website
+
 This project serves as a practical validation of my research into LLM applications, demonstrating how AI can bridge the gap between theoretical knowledge and practical implementation. It showcases the potential of AI-assisted development to democratize complex technical implementations while maintaining enterprise-grade standards.
 
 ## Overview
-A secure, performance-optimized portfolio website built using LLMs for development assistance. This project demonstrates how AI tools can be leveraged to implement enterprise-grade security and performance optimizations without prior web development experience.
+A highly secure, performance-optimized portfolio website built using LLMs for development assistance. This project demonstrates how AI tools can be leveraged to implement enterprise-grade security and performance optimizations without prior web development experience.
+
+
+### UI Features
+- Interactive particle.js background system
+- Custom cursor with dual-layer animation
+- Responsive hero section with 3D card effects
+- Mobile-first design approach
+- Dynamic floating elements
+- AOS scroll animations
+
+### Performance Optimization
+- Resource preloading for critical assets
+- Optimized image loading strategies
+- CDN integration for static assets
+- Efficient CSS variable architecture
+- Z-index layer management
+
+### Analytics Integration
+- Enhanced Google Analytics 4 setup
+- Custom dimension tracking:
+  - User engagement time
+  - Scroll depth monitoring
+  - Outbound link tracking
+  - Site speed sampling
+
+### Accessibility
+- ARIA labels implementation 
+- Semantic HTML structure
+- Screen reader optimizations
+- Mobile menu accessibility
+- Keyboard navigation support
 
 ## Security Implementation
-Current Lynis security scan hardening index : 80
+Current Lynis security scan hardening index: 80
 
 ### Infrastructure Protection
 - UFW, iptables, and nftables firewall implementation
@@ -48,23 +80,29 @@ Current Lynis security scan hardening index : 80
   - Keep-alive: 15s
   - Send: 10s
 
-## Security Metrics
+## Performance Metrics
 - SSL Rating: A+
 - Security Headers: A+
 - Load Time: <100ms
 - HTTP/2: Enabled
+- First Paint: <1s
+- Core Web Vitals: All Passed
 
-## Continuous Security
+## Continuous Integration
 - Automated security updates
 - Regular vulnerability scanning
 - SSL/TLS certificate monitoring
 - Docker security configurations
+- Performance monitoring
+- Analytics reporting
 
 ## Technical Stack
 - Frontend: Static HTML5/CSS3
 - Server: Nginx on Ubuntu 22.04 LTS
 - CDN: Cloudflare
 - Analytics: Google Analytics 4
+- Animations: AOS, Particles.js
+- Icons: Font Awesome 6
 
 ## Development Process
 Built using Cursor.sh IDE with LLM assistance for:
@@ -72,7 +110,8 @@ Built using Cursor.sh IDE with LLM assistance for:
 - Performance optimization
 - Code generation and debugging
 - Best practices implementation
-
+- UI/UX design patterns
+- Accessibility standards
 
 ## Author
 Lucas Kemper
