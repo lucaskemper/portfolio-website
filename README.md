@@ -94,10 +94,34 @@ Current Lynis security scan hardening index: 85
 - Analytics reporting
 
 ## Technical Stack
-- Frontend: Static HTML5/CSS3
-- Server: Nginx on Ubuntu 22.04 LTS
-- CDN: Cloudflare
-- Animations: AOS, Particles.js
+
+```mermaid
+graph TD
+    subgraph Client
+        A[User Browser] --> B[HTML5/CSS3]
+        B --> C1[AOS Animations]
+        B --> C2[Particles.js]
+    end
+
+    subgraph CDN
+        D[Cloudflare]
+    end
+
+    subgraph Server["Server (AX41)"]
+        E[Nginx]
+        F[Ubuntu 22.04 LTS]
+        G["Hardware Specs:
+        64GB RAM"]
+    end
+
+    A --> D
+    D --> E
+    E --> F
+    F --- G
+
+    style Server fill:#f5f5f5,stroke:#333,stroke-width:2px
+    style Client fill:#e1f5fe,stroke:#333,stroke-width:2px
+    style CDN fill:#fff3e0,stroke:#333,stroke-width:2px
 
 ## Development Process
 Built using LLM assistance for:
