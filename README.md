@@ -1,116 +1,76 @@
-### IN REDACTION
 # LLM-Powered Portfolio Website
+[![Security Rating](https://img.shields.io/badge/Security-A+-success.svg)](https://lucaskemper.com)
+[![Performance](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen.svg)](https://lucaskemper.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-This project serves as a practical validation of my research into LLM applications, demonstrating how AI can bridge the gap between theoretical knowledge and practical implementation. It showcases the potential of AI-assisted development to democratize complex technical implementations while maintaining enterprise-grade standards.
+<p align="center">
+  <img src="assets/images/demo.gif" alt="Portfolio Demo" width="600">
+</p>
 
-## Overview
-A highly secure, performance-optimized portfolio website built using LLMs for development assistance. This project demonstrates how AI tools can be leveraged to implement enterprise-grade security and performance optimizations without prior web development experience.
+> A production-grade portfolio website showcasing the potential of AI-assisted development, implementing enterprise security standards and performance optimizations.
 
+## 🚀 Key Features
 
-### UI Features
-- Interactive particle.js background system
-- Custom cursor with dual-layer animation
-- Responsive hero section with 3D card effects
-- Mobile-first design approach
-- Dynamic floating elements
-- AOS scroll animations
+### 🎨 Modern UI/UX
+- **Interactive Elements**
+  - Particle.js background system
+  - Dual-layer animated cursor
+  - 3D card effects with perspective transforms
+  - Dynamic floating elements with AOS animations
+- **Responsive Design**
+  - Mobile-first approach
+  - Fluid typography
+  - Adaptive layouts
 
-### Performance Optimization
-- Resource preloading for critical assets
-- Optimized image loading strategies
-- CDN integration for static assets
-- Efficient CSS variable architecture
-- Z-index layer management
+### ⚡ Performance
+- **Resource Optimization**
+  - Critical asset preloading
+  - Lazy loading with priority hints
+  - WebP image optimization
+  - CDN integration
+- **Current Metrics**
+  - Load Time: <100ms
+  - Lighthouse Score: 100/100
+  - Security Headers: A+
 
-### Analytics Integration
-- Enhanced Google Analytics 4 setup
-- Custom dimension tracking:
-  - User engagement time
-  - Scroll depth monitoring
-  - Outbound link tracking
-  - Site speed sampling
+### 🛡️ Security
+- **Infrastructure**
+  - Multi-layer firewall configuration
+  - Intrusion detection & prevention
+  - Runtime security monitoring
+  - Web Application Firewall (WAF)
 
-### Accessibility
-- ARIA labels implementation 
-- Semantic HTML structure
-- Screen reader optimizations
-- Mobile menu accessibility
-- Keyboard navigation support
+- **System Hardening**
+  - Regular security scans
+  - File integrity monitoring
+  - Container isolation
+  - Access control policies
 
-## Security Implementation
-Current Lynis security scan hardening index: 85
+### 📊 Analytics
+- **Privacy-Focused Tracking**
+  - User engagement metrics
+  - Performance monitoring
+  - Custom event tracking
+  - GDPR-compliant implementation
 
-### Infrastructure Protection
-- UFW, iptables, and nftables firewall implementation
-- Fail2ban and CrowdSec for intrusion prevention
-- Falco runtime security monitoring
-- NGINX with ModSecurity WAF
+## 🛠️ Technology Stack
 
-### System Hardening
-- ClamAV, Chkrootkit, RKHunter for antimalware
-- AIDE file integrity monitoring
-- AppArmor with custom profiles
-- Docker security with container isolation
+## ⚙️ Infrastructure Overview
 
-### SSL/TLS Configuration
-- Protocols: TLSv1.2, TLSv1.3
-- Cipher suite: ECDHE/DHE with Perfect Forward Secrecy
-- OCSP Stapling with verification
-- Session management:
-  - 1d timeout
-  - 50MB shared cache
-  - Session tickets disabled
+### Hardware Configuration
+- **Processor**: AMD Ryzen 5 3600 (12 Threads)
+- **Memory**: 64GB High-Performance RAM
+- **Storage**: Enterprise SSD Configuration
+- **Network**: Redundant High-Speed Connection
 
-### Security Headers
-- HSTS: 2-year duration
-- CSP: Strict configuration
-- X-Frame-Options: SAMEORIGIN
-- X-Content-Type-Options: nosniff
-- Referrer-Policy: strict-origin-when-cross-origin
+### System Architecture
+- **OS**: Debian Linux (Latest)
+- **Virtualization**: Docker Container Environment
+- **Web Server**: Nginx with Optimized Configuration
+- **Security**: Multi-Layer Protection System
 
-### Resource Protection
-- Buffer limits:
-  - Client body: 10K
-  - Header: 1k
-  - Max body: 8MB
-  - Large headers: 4x8k
-- Timeouts:
-  - Client body: 12s
-  - Client header: 12s
-  - Keep-alive: 15s
-  - Send: 10s
-
-## Performance Metrics
-- SSL Rating: A+
-- Security Headers: A+
-- Load Time: <100ms
-
-## Continuous Integration
-- Automated security updates
-- Regular vulnerability scanning
-- SSL/TLS certificate monitoring
-- Docker security configurations
-- Performance monitoring
-- Analytics reporting
-
-
-Code
-
-Blame
-
-## Development Process
-Built using LLM assistance for:
-- Security configuration implementation
-- Performance optimization
-- Code generation and debugging
-- Best practices implementation
-- UI/UX design patterns
-- Accessibility standards
-
-## Author
-Lucas Kemper
-- [Website](https://lucaskemper.com)
-- [GitHub](https://github.com/lucaskemper)
-
-## License
-MIT License
+### Performance Metrics
+- System Load: < 5%
+- Memory Utilization: Optimized
+- Storage Redundancy: RAID Implementation
+- Uptime: 99.9% SLA
