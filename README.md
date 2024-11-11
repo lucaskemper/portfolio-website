@@ -36,9 +36,9 @@ graph TD
     A[Client] -->|HTTPS/2| B[Load Balancer]
     B --> C[Nginx 1.22.1]
     C --> D[Docker Container]
-    D --> E[AMD Ryzen 5 3600]
-    D --> F[64GB RAM]
-    D --> G[Enterprise SSD]
+    D --> E[Dedicated Server]
+    D --> E[64GB RAM]
+    D --> E[Enterprise SSD]
 ```
 
 ---
