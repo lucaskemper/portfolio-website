@@ -1,4 +1,4 @@
-# LLM-Powered Portfolio Website [IN REDACTION]
+# LLM-Powered Portfolio Website
 [![Security Rating](https://img.shields.io/badge/Security-A+-success.svg)](https://lucaskemper.com)
 [![Performance](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen.svg)](https://lucaskemper.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -33,22 +33,37 @@
 
 ```mermaid
 graph TD
-    A[Client Browser] -->|HTTPS/2 + TLS 1.3| B[Load Balancer]
-    B -->|Reverse Proxy| C[Nginx 1.22.1]
-    C -->|Container Runtime| D[Docker Container]
-    D -->|Bare Metal| E[Dedicated Server]
-    
-    subgraph Hardware
-        E -->|Memory| F[64GB DDR4 RAM]
-        E -->|Processor| G[AMD Ryzen 5 3600<br>6C/12T @ 4.2GHz]
-        E -->|Storage| H[1.5TB→500GB R1N3 SSD<br>NVMe Triple Mirror]
+    subgraph Security Layer
+        WAF[Web Application Firewall] -->|TLS 1.3 + HSTS| A
+        DDOS[DDoS Protection] --> WAF
     end
 
-    style Hardware fill:#f5f5f5,stroke:#333,stroke-width:2px
-    style A fill:#e1f5fe
-    style B fill:#e8f5e9
-    style C fill:#fff3e0
-    style D fill:#fce4ec
+    A[Client Browser] -->|HTTPS/2 + TLS 1.3| B[Load Balancer]
+    B -->|HAProxy + Keepalived| C[Nginx 1.22.1]
+    C -->|Container Runtime| D[Docker Container]
+
+    subgraph Container Layer
+        D -->|App Container| APP[Application]
+        D -->|Monitor| MON[Prometheus + Grafana]
+        D -->|Logs| LOG[ELK Stack]
+    end
+
+    D -->|Bare Metal| E[Dedicated Server]
+
+    subgraph Hardware Infrastructure
+        E -->|Memory| F[64GB DDR4-3200 RAM<br>Dual Channel]
+        E -->|Processor| G[AMD Ryzen 5 3600<br>6C/12T @ 4.2GHz<br>65W TDP]
+        E -->|Storage| H[1.5TB→500GB R1N3 SSD<br>NVMe Triple Mirror<br>3.5GB/s Read]
+    end
+
+    subgraph Backup System
+        E -.->|Daily| BK[Remote Backup<br>ZFS Snapshots]
+    end
+
+    style Security Layer fill:#ffe0e0
+    style Hardware Infrastructure fill:#e0f0ff
+    style Container Layer fill:#e0ffe0
+    style Backup System fill:#fff0e0
 ```
 
 ---
