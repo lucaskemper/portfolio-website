@@ -31,16 +31,23 @@
 
 ## 🏗️ Architecture Overview
 
-```mermaid
 graph TD
-    A[Client] -->|HTTPS/2| B[Load Balancer]
-    B --> C[Nginx 1.22.1]
-    C --> D[Docker Container]
-    D --> E[Dedicated Server]
-    E --> F[64GB RAM]
-    E --> G[AMD Ryzen 5 3600]
-    E --> H[1.5TB→500GB R1N3 SSD]
-```
+    A[Client Browser] -->|HTTPS/2 + TLS 1.3| B[Load Balancer]
+    B -->|Reverse Proxy| C[Nginx 1.22.1]
+    C -->|Container Runtime| D[Docker Container]
+    D -->|Bare Metal| E[Dedicated Server]
+    
+    subgraph Hardware
+        E -->|Memory| F[64GB DDR4 RAM]
+        E -->|Processor| G[AMD Ryzen 5 3600<br>6C/12T @ 4.2GHz]
+        E -->|Storage| H[1.5TB→500GB R1N3 SSD<br>NVMe Triple Mirror]
+    end
+
+    style Hardware fill:#f5f5f5,stroke:#333,stroke-width:2px
+    style A fill:#e1f5fe
+    style B fill:#e8f5e9
+    style C fill:#fff3e0
+    style D fill:#fce4ec
 
 ---
 
