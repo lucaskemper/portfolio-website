@@ -37,8 +37,8 @@ graph TD
     B --> C[Nginx 1.22.1]
     C --> D[Docker Container]
     D --> E[Dedicated Server]
-    D --> E[64GB RAM]
-    D --> E[Enterprise SSD]
+    E --> F[64GB RAM]
+    E --> G[Enterprise SSD]
 ```
 
 ---
