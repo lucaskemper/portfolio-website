@@ -14,8 +14,6 @@
 ### 🎨 Modern UI/UX
 - **Interactive Elements**
   - Particle.js background with dynamic interactions
-  - Matrix-style rain effect with canvas
-  - Custom animated cursor with dual-layer design
   - 3D card effects with perspective transforms
   - Dynamic floating elements with AOS animations
   - Interactive buttons with hover effects
