@@ -83,22 +83,6 @@ graph TD
     end
 ```
 
----
-
-## 🛡️ Security Stack
-
-<div align="center">
-
-| Layer | Implementation | Version |
-|-------|---------------|---------|
-| Network | UFW + BIND9 | 9.18.28 |
-| System | AppArmor + SELinux | 3.0.8 |
-| Monitoring | Lynis + Auditd | 3.0.8/3.0.9 |
-| Prevention | AIDE + RKHunter | 1.4.6 |
-| Access | OpenSSH | 9.2p1 |
-| Kernel | Hardened Linux | 6.1.112-1 |
-
-</div>
 
 ---
 
@@ -129,4 +113,5 @@ graph TD
 - HSTS with max-age=31536000
 - Strict CSP headers
 - Multi-layer WAF protection
+- Current Lynis security scan hardening index: 86
 </details>
