@@ -33,37 +33,53 @@
 
 ```mermaid
 graph TD
-    subgraph Security Layer
-        WAF[Web Application Firewall] -->|TLS 1.3 + HSTS| A
-        DDOS[DDoS Protection] --> WAF
+    subgraph Edge Security
+        CF[Cloudflare Enterprise] -->|DDoS + WAF| A
+        CF -->|CDN Cache| A
     end
 
-    A[Client Browser] -->|HTTPS/2 + TLS 1.3| B[Load Balancer]
-    B -->|HAProxy + Keepalived| C[Nginx 1.22.1]
-    C -->|Container Runtime| D[Docker Container]
+    A[Client Browser] -->|HTTPS/2 + TLS 1.3| LB[Load Balancer Cluster]
+
+    subgraph High Availability
+        LB -->|Active-Active| HAP1[HAProxy Primary]
+        LB -->|Failover| HAP2[HAProxy Secondary]
+        HAP1 -->|Layer 7| NGX[Nginx 1.22.1]
+        HAP2 -->|Layer 7| NGX
+    end
+
+    NGX -->|Container Orchestration| DOC[Docker Swarm]
 
     subgraph Container Layer
-        D -->|App Container| APP[Application]
-        D -->|Monitor| MON[Prometheus + Grafana]
-        D -->|Logs| LOG[ELK Stack]
+        DOC -->|App| APP[Application Stack]
+        DOC -->|Metrics| PROM[Prometheus + Grafana]
+        DOC -->|Logging| ELK[ELK Stack]
+        DOC -->|Security| FW[ModSecurity WAF]
     end
 
-    D -->|Bare Metal| E[Dedicated Server]
+    DOC -->|Bare Metal| E[Dedicated Server]
 
-    subgraph Hardware Infrastructure
-        E -->|Memory| F[64GB DDR4-3200 RAM<br>Dual Channel]
-        E -->|Processor| G[AMD Ryzen 5 3600<br>6C/12T @ 4.2GHz<br>65W TDP]
-        E -->|Storage| H[1.5TB→500GB R1N3 SSD<br>NVMe Triple Mirror<br>3.5GB/s Read]
+    subgraph Hardware Layer
+        E -->|Memory| F[64GB DDR4-3200 RAM]
+        E -->|Processor| G[AMD Ryzen 5 3600]
+        E -->|Storage| H[1.5TB→500GB R1N3 SSD]
     end
 
-    subgraph Backup System
-        E -.->|Daily| BK[Remote Backup<br>ZFS Snapshots]
+    subgraph Monitoring & Alerts
+        PROM -->|Metrics| ALERT[AlertManager]
+        ELK -->|Logs| ALERT
+        ALERT -->|Notification| SLACK[Slack + Email]
     end
 
-    style Security Layer fill:#ffe0e0
-    style Hardware Infrastructure fill:#e0f0ff
-    style Container Layer fill:#e0ffe0
-    style Backup System fill:#fff0e0
+    subgraph Backup Infrastructure
+        E -.->|Hourly| BORG[Borg Backup]
+        BORG -.->|Daily| S3[S3 Cold Storage]
+        BORG -.->|Weekly| OFF[Offsite Backup]
+    end
+
+    subgraph Security Monitoring
+        SEC[Fail2Ban + CrowdSec] -->|IDS/IPS| E
+        AUD[Auditd + OSSEC] -->|HIDS| E
+    end
 ```
 
 ---
