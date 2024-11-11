@@ -72,7 +72,7 @@ graph TD
     end
 
     subgraph Backup Infrastructure
-        E -.->|Hourly| BORG[Borg Backup]
+        E -.->|Backup| BORG[Borg Backup]
         BORG -.->|Daily| S3[S3 Cold Storage]
         BORG -.->|Weekly| OFF[Offsite Backup]
     end
