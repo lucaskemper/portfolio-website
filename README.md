@@ -67,7 +67,7 @@ graph TD
     subgraph Monitoring & Alerts
         PROM -->|Metrics| ALERT[AlertManager]
         ELK -->|Logs| ALERT
-        ALERT -->|Notification| SLACK[Slack + Email]
+        ALERT -->|Notification| SLACK[Email]
     end
 
     subgraph Backup Infrastructure
