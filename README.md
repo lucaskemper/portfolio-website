@@ -38,7 +38,8 @@ graph TD
     C --> D[Docker Container]
     D --> E[Dedicated Server]
     E --> F[64GB RAM]
-    E --> G[Enterprise SSD]
+    E --> G[AMD Ryzen 5 3600]
+    E --> H[1.5TB→500GB R1N3 SSD]
 ```
 
 ---
