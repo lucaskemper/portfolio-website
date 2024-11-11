@@ -8,7 +8,7 @@
   <img src="assets/images/demo.gif" alt="Portfolio Demo" width="600">
 </p>
 
-**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating**
+**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 85**
 
 [Live Demo](https://lucaskemper.com)  
 
@@ -113,5 +113,4 @@ graph TD
 - HSTS with max-age=31536000
 - Strict CSP headers
 - Multi-layer WAF protection
-- Current Lynis security scan hardening index: 86
 </details>
