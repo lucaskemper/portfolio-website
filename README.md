@@ -9,7 +9,7 @@
 
 **Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating**
 
-[Live Demo](https://lucaskemper.com) • [Documentation](docs/) • [Security](SECURITY.md)
+[Live Demo](https://lucaskemper.com)  
 
 ---
 
