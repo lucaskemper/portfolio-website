@@ -31,6 +31,7 @@
 
 ## 🏗️ Architecture Overview
 
+```mermaid
 graph TD
     A[Client Browser] -->|HTTPS/2 + TLS 1.3| B[Load Balancer]
     B -->|Reverse Proxy| C[Nginx 1.22.1]
@@ -48,6 +49,7 @@ graph TD
     style B fill:#e8f5e9
     style C fill:#fff3e0
     style D fill:#fce4ec
+```
 
 ---
 
