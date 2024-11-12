@@ -41,4 +41,5 @@
 - HSTS with max-age=31536000 (one year)
 - Strict CSP headers
 - Multi-layer WAF protection
+- ... 
 </details>
