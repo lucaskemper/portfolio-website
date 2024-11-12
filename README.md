@@ -95,11 +95,15 @@ graph TD
     classDef primary fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef secondary fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef security fill:#ffebee,stroke:#b71c1c,stroke-width:2px
-    
+
     %% Apply styles
     class CF,FW,SEC,AUD security
     class A,LB,HAP1,HAP2,NGX primary
     class APP,PROM,ELK,ALERT secondary
+
+
+
+
 
 
 ---
