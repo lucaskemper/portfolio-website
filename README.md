@@ -61,7 +61,7 @@ graph TD
 
     subgraph Hardware Layer
         E -->|Memory| F[64GB DDR4-3200 RAM]
-        E -->|Processor| G[AMD Ryzen 5 3600]
+        E -->|Processor| G[AMD Ryzen 7 7700 (Zen4)]
         E -->|Storage| H[1.5TB→500GB R1N3 SSD]
     end
 
