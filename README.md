@@ -38,7 +38,7 @@
 <summary><strong>🛡️ Security Measures</strong></summary>
 
 - TLS 1.3 with TLS_AES_256_GCM_SHA384
-- HSTS with max-age=31536000
+- HSTS with max-age=31536000 (one year)
 - Strict CSP headers
 - Multi-layer WAF protection
 </details>
