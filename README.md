@@ -4,12 +4,8 @@
 [![Performance](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen.svg)](https://lucaskemper.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-<p align="center">
-  <img src="assets/images/demo.gif" alt="Portfolio Demo" width="600">
-</p>
 
 **Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 85**
-
 
 ---
 ## Infrastructure
