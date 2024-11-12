@@ -10,7 +10,6 @@
 
 **Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 85**
 
-[Live Demo](https://lucaskemper.com)  
 
 ---
 ## Infrastructure
