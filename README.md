@@ -8,7 +8,7 @@
   <img src="assets/images/demo.gif" alt="Portfolio Demo" width="600">
 </p>
 
-**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 79**
+**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 79 (outdated)**
 
 [Live Demo](https://lucaskemper.com)  
 
