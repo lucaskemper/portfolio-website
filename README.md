@@ -31,57 +31,75 @@
 ---
 
 ## 🏗️ Architecture Overview
-
-```mermaid
 graph TD
-    subgraph Edge Security
-        CF[Cloudflare Enterprise] -->|DDoS + WAF| A
+    %% Edge Security Layer
+    subgraph "Edge Security"
+        CF[Cloudflare Enterprise]
+        CF -->|DDoS + WAF| A[Client Browser]
         CF -->|CDN Cache| A
     end
 
-    A[Client Browser] -->|HTTPS/2 + TLS 1.3| LB[Load Balancer Cluster]
+    %% Client to Load Balancer
+    A -->|HTTPS/2 + TLS 1.3| LB[Load Balancer Cluster]
 
-    subgraph High Availability
+    %% High Availability Layer
+    subgraph "High Availability"
         LB -->|Active-Active| HAP1[HAProxy Primary]
         LB -->|Failover| HAP2[HAProxy Secondary]
         HAP1 -->|Layer 7| NGX[Nginx 1.22.1]
         HAP2 -->|Layer 7| NGX
     end
 
+    %% Container Orchestration
     NGX -->|Container Orchestration| DOC[Docker Swarm]
 
-    subgraph Container Layer
+    %% Container Layer
+    subgraph "Container Layer"
         DOC -->|App| APP[Application Stack]
         DOC -->|Metrics| PROM[Prometheus + Grafana]
         DOC -->|Logging| ELK[ELK Stack]
         DOC -->|Security| FW[ModSecurity WAF]
     end
 
+    %% Hardware Infrastructure
     DOC -->|Bare Metal| E[Dedicated Server]
 
-    subgraph Hardware Layer
+    %% Hardware Layer
+    subgraph "Hardware Layer"
         E -->|Memory| F[64GB DDR4-3200 RAM]
-        E -->|Processor| G[AMD Ryzen 7 7700 (Zen4)]
+        E -->|Processor| G[AMD Ryzen 7 7700]
         E -->|Storage| H[1.5TB→500GB R1N3 SSD]
     end
 
-    subgraph Monitoring & Alerts
+    %% Monitoring & Alerts
+    subgraph "Monitoring & Alerts"
         PROM -->|Metrics| ALERT[AlertManager]
         ELK -->|Logs| ALERT
         ALERT -->|Notification| SLACK[Email]
     end
 
-    subgraph Backup Infrastructure
+    %% Backup Infrastructure
+    subgraph "Backup Infrastructure"
         E -.->|Backup| BORG[Borg Backup]
         BORG -.->|Daily| S3[S3 Cold Storage]
         BORG -.->|Weekly| OFF[Offsite Backup]
     end
 
-    subgraph Security Monitoring
+    %% Security Monitoring
+    subgraph "Security Monitoring"
         SEC[Fail2Ban + CrowdSec] -->|IDS/IPS| E
         AUD[Auditd + OSSEC] -->|HIDS| E
     end
-```
+
+    %% Style Definitions
+    classDef primary fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef secondary fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef security fill:#ffebee,stroke:#b71c1c,stroke-width:2px
+    
+    %% Apply styles
+    class CF,FW,SEC,AUD security
+    class A,LB,HAP1,HAP2,NGX primary
+    class APP,PROM,ELK,ALERT secondary
 
 
 ---
