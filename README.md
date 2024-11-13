@@ -31,7 +31,6 @@
 - Critical CSS inlining
 - Preloading of key assets
 - Async script loading
-- WebP image optimization
 </details>
 
 <details>
