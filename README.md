@@ -5,12 +5,5 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 
-**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating • Current Lynis Audit Score: 82**
-
----
-## Infrastructure
-
-
-<img width="775" alt="image" src="https://github.com/user-attachments/assets/7a90757a-c3ba-47a3-b0f9-ea40e71e822c">
-
+**Enterprise-Grade Portfolio Platform • Sub-100ms Load Time • A+ Security Rating 
 
