@@ -7,4 +7,4 @@
 
 Enterprise-Grade Cybersecurity Focused Portfolio Platform • Sub-100ms Load Time • A+ Security Rating 
 
-Note: Due to the threat of cyberattacks, I have decided to keep my infrastructure details private, if you want more informations feel free to reach out !
+Note: Due to the threat of cyberattacks, I have decided to keep details about my infrastructure private, if you want more informations feel free to reach out !
