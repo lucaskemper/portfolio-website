@@ -1,21 +1,32 @@
 # LLM-Powered Portfolio Website
 
-![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
+![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen) ![LGTM](https://img.shields.io/badge/LYNIX-80%25-blue) ![License](https://img.shields.io/badge/License-MIT-blue)
 
-A high-performance, secure portfolio platform built with modern technology stack and AI-assisted development.
+A high-performance, secure portfolio platform showcasing research and projects at the intersection of finance and AI. Built with modern technology stack and AI-assisted development.
 
-## Key Features
+## ✨ Key Features
 
 - 🔒 Enterprise-grade security architecture
 - ⚡ Sub-100ms load time optimization
-- 🤖 LLM-assisted development
+- 📊 80% LYNIX score 
+- 🤖 LLM-assisted development pipeline
 - 🌐 Modern tech stack implementation
-- 🛡️ A+ security rating
+- 🛡️ Advanced security protocols
 
-## Note
+## 🚀 Quick Stats
+- **Load Time**: <100ms
+- **Security Rating**: A+
+- **LYNIX Score**: 80%
+- **Framework**: Vue.js 3 + Tailwind CSS
+- **Infrastructure**: Enterprise-grade setup
+
+## 🔗 Resources
+- **Live Demo**: [lucaskemper.com](https://lucaskemper.com)
+
+## 📝 Note
 
 For security considerations, implementation details are private. For collaboration inquiries, feel free to reach out.
 
-## License
+## 📜 License
 
 MIT © Lucas Kemper
