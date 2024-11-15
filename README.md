@@ -5,5 +5,5 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 
-Enterprise-Grade cybersecutiy focused Portfolio Platform • Sub-100ms Load Time • A+ Security Rating 
+Enterprise-Grade Cybersecurity Focused Portfolio Platform • Sub-100ms Load Time • A+ Security Rating 
 
