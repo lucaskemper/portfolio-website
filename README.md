@@ -15,8 +15,6 @@ A high-performance, secure portfolio platform showcasing research and projects a
 ## 🚀 Quick Stats
 - **Load Time**: <100ms
 - **Security Rating**: A+
-- **LYNIX Score**: 80%
-- **Framework**: Vue.js 3 + Tailwind CSS
 - **Infrastructure**: Enterprise-grade setup
 
 ## 🔗 Resources
