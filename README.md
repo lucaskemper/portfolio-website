@@ -1,10 +1,21 @@
+# LLM-Powered Portfolio Website
 
-# LLM-Powered Portfolio Website 
-[![Security Rating](https://img.shields.io/badge/Security-A+-success.svg)](https://lucaskemper.com)
-[![Performance](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen.svg)](https://lucaskemper.com)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
+A high-performance, secure portfolio platform built with modern technology stack and AI-assisted development.
 
-Enterprise-Grade Cybersecurity Focused Portfolio Platform • Sub-100ms Load Time • A+ Security Rating 
+## Key Features
 
-Note: For security considerations, technical infrastructure details are maintained private. For legitimate inquiries about implementation specifics, please reach out directly.
+- 🔒 Enterprise-grade security architecture
+- ⚡ Sub-100ms load time optimization
+- 🤖 LLM-assisted development
+- 🌐 Modern tech stack implementation
+- 🛡️ A+ security rating
+
+## Note
+
+For security considerations, implementation details are private. For collaboration inquiries, feel free to reach out.
+
+## License
+
+MIT © Lucas Kemper
