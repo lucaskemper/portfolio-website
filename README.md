@@ -8,7 +8,6 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 - 🔒 Enterprise-grade security architecture
 - ⚡ Sub-100ms load time optimization
-- 📊 80% LYNIX score 
 - 🤖 LLM-assisted development pipeline
 - 🌐 Modern tech stack implementation
 - 🛡️ Advanced security protocols
