@@ -21,7 +21,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 ## 📝 Note
 
-For obvious security considerations, implementation details are private. For collaboration inquiries, feel free to reach out.
+For obvious security considerations, implementation details are private. For collaboration inquiries, feel free to reach out. 
 
 ## 📜 License
 
