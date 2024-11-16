@@ -1,6 +1,6 @@
 # LLM-Powered Portfolio Website
 
-![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
+![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<50ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
 A high-performance, secure portfolio platform showcasing research and projects at the intersection of finance and AI. Built with modern technology stack and AI-assisted development.
 
@@ -13,7 +13,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 - 🛡️ Advanced security protocols
 
 ## 🚀 Quick Stats
-- **Load Time**: <100ms
+- **Load Time**: <50ms
 - **Security Rating**: A+
 - **Infrastructure**: Enterprise-grade setup
 
