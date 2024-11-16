@@ -8,7 +8,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 - 🔒 Enterprise-grade security architecture
 - ⚡ Sub-100ms load time optimization which puts this website in the top 0.1% globally (I currently have DNS issues so users might experience a higher latency than what's mentionned on this page, expecially on first visit)
-- 🤖 LLM-assisted development pipeline
+- 🤖 LLM-assisted development pipeline using cutting-edge models and technologies
 - 🌐 Modern tech stack implementation
 - 🛡️ Advanced security protocols
 
