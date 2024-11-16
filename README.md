@@ -7,7 +7,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 ## ✨ Key Features
 
 - 🔒 Enterprise-grade security architecture
-- ⚡ Sub-100ms load time optimization which puts this website in the top 0.1% 
+- ⚡ Sub-100ms load time optimization which puts this website in the top 0.1% globally
 - 🤖 LLM-assisted development pipeline
 - 🌐 Modern tech stack implementation
 - 🛡️ Advanced security protocols
