@@ -7,7 +7,6 @@ A high-performance, secure portfolio platform showcasing research and projects a
 ## ✨ Key Features
 
 - ⚡ Enterprise-grade infrastructure leveraging Cloudflare's global edge network (20+ PoPs) delivering sub-100ms latency to 95% of global users. Multi-region deployment across North America (Seattle, Atlanta, NYC), Europe (Paris, London, Switzerland), Asia, and South America ensures optimal performance through intelligent routing and advanced CDN optimization. Implementation of TLS 1.3, HTTP/3 (QUIC), and Brotli compression positions this platform among the top 0.1% of performance-optimized web applications globally.
-Note: Continuous performance optimization in progress through Cloudflare's enterprise network, focusing on further latency reduction and global scalability.
 - 🤖 LLM-assisted development pipeline using cutting-edge models and technologies
 - 🌐 Modern tech stack implementation
 - 🛡️ Advanced security protocols
