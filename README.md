@@ -1,4 +1,4 @@
-# LLM-Powered Portfolio Website
+# LLM-Powered Portfolio Website (Beta Version)
 
 ![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<100ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
