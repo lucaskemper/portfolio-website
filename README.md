@@ -13,7 +13,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 ## 🚀 Quick Stats
 - **Security Rating**: A+
-- **Infrastructure**: Enterprise-grade setup and hardware
+- **Infrastructure**: Dedicated Enterprise-grade Server 
 
 ## 🔗 Resources
 - **Live Demo**: [lucaskemper.com](https://lucaskemper.com)
