@@ -18,10 +18,11 @@ A high-performance, secure portfolio platform showcasing research and projects a
 ## 🔗 Resources
 - **Live Demo**: [lucaskemper.com](https://lucaskemper.com)
 
-## 📝 Note
+## 📝 Notes
 
-For obvious security considerations, implementation details are private. For collaboration inquiries, feel free to reach out. 
-My crypto project is not stored on this server. 
+- For obvious security considerations, implementation details are private. 
+- For collaboration inquiries, feel free to reach out. 
+- My crypto project is not stored on this server. 
 ## 📜 License
 
 MIT © Lucas Kemper
