@@ -6,7 +6,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 ## ✨ Key Features
 
-⚡ Powered by Cloudflare's expansive global edge network, our infrastructure delivers verified enterprise-grade performance:
+⚡ Powered by Cloudflare's expansive global edge network, my infrastructure aims to deliver enterprise-grade performance:
 
 ### Network Performance
 - 🌍 European Performance Excellence:
