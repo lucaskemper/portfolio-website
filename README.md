@@ -1,6 +1,6 @@
 # LLM-Powered Portfolio Website (Beta Version)
 
-![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<5ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
+![Security](https://img.shields.io/badge/Security-A+-darkgreen) ![Load Time](https://img.shields.io/badge/Load%20Time-<10ms-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
 A high-performance, secure portfolio platform showcasing research and projects at the intersection of finance and AI. Built with modern technology stack and AI-assisted development.
 
@@ -10,34 +10,49 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 ### Network Performance
 - 🌍 European Performance Excellence:
-  - Switzerland: ~4.3ms average latency (range: 3.9-4.6ms)
-  - Consistent sub-5ms final hop performance
-  - Highly stable connection (0.2ms standard deviation)
-  - Regional routing optimization through premium European networks
+  - Final hop average: 5.4ms (range: 4.1-8.4ms)
+  - Edge network latency: 4.8-7.1ms
+  - Regional routing: 2.6-15.6ms across full path
+  - High stability with low packet loss (0% measured)
+
+### Global Infrastructure
+- 🌐 Multi-Region Active Deployment:
+  - **EU Pool** (Primary):
+    - Paris (CDG): Active endpoint
+    - London (LHR): Active endpoint
+    - Zurich (ZRH): Active endpoint
+  - **NA Pool** (Secondary):
+    - New York (NYC): Active endpoint
+    - Seattle (SEA): Active endpoint
+  - **Core Infrastructure**:
+    - Dedicated German server
+    - Random steering policy with proximity optimization
+    - Geographic load balancing with automatic failover
+    - Health monitoring across all endpoints
 
 ### Security & Protocols
 - 🔒 Enterprise-grade security with TLS 1.3
-- 🛡️ AEAD-CHACHA20-POLY1305-SHA256 encryption for optimal device-specific performance
+- 🛡️ AEAD-CHACHA20-POLY1305-SHA256 encryption
 - 📦 Brotli compression for efficient content delivery
 - 🚀 HTTP/2 with advanced performance optimizations
 
-### Infrastructure
-- 🌐 Multi-region deployment with optimized European routing
-- ⚡ Cloudflare-powered edge network with intelligent path optimization
-- 🔄 Dynamic content caching and optimization
-- 🛡️ Enterprise-grade DDoS protection
+### Load Balancing
+- ⚡ Active load balancing across 5 global endpoints
+- 🔄 Automatic failover and health checks
+- 🌍 Geographic routing optimization
+- 📍 Proximity-based steering (centered at 48.8566, 2.3522)
 
 Additional Features:
-- 🤖 LLM-assisted development pipeline using cutting-edge models and technologies
+- 🤖 LLM-assisted development pipeline
 - 🌐 Modern tech stack implementation
 - 🛡️ Advanced security protocols 
 
 ## 🚀 Quick Stats
-- **Edge Network Performance**: Verified 4.3ms average latency
+- **Edge Network Performance**: 5.4ms average (σ = 1.6ms)
 - **Security Rating**: A+
-- **Infrastructure**: Cloudflare Enterprise Edge Network
-- **Time to First Byte (TTFB)**: 222.465ms
-- **Packet Loss**: 0% (based on network tests)
+- **Infrastructure**: 5 active endpoints across 2 continents
+- **Network Path**: 9 hops with 0% packet loss
+- **Load Balancing**: 2 active pools with health monitoring
 
 ## 🔗 Resources
 - **Live Demo**: [lucaskemper.com](https://lucaskemper.com)
