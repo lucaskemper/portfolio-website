@@ -40,7 +40,6 @@ A high-performance, secure portfolio platform showcasing research and projects a
 - ⚡ Active load balancing across 5 global endpoints
 - 🔄 Automatic failover and health checks
 - 🌍 Geographic routing optimization
-- 📍 Proximity-based steering (centered at 48.8566, 2.3522)
 
 Additional Features:
 - 🤖 LLM-assisted development pipeline
