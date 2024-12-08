@@ -8,7 +8,7 @@ A high-performance, secure portfolio platform showcasing research and projects a
 
 ⚡ Powered by Cloudflare's expansive global edge network, my infrastructure aims to deliver enterprise-grade performance:
 
-### Network Performance (theorical, using MTR)
+### Network Performance (theorical, measured using MTR)
 - 🌍 European Performance Excellence:
   - Final hop average: 5.4ms (range: 4.1-8.4ms)
   - Edge network latency: 4.8-7.1ms
